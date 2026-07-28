@@ -505,9 +505,12 @@ a.candy-card:hover h3 { color: var(--deep-pink); }
 }
 .page-banner > .container { position: relative; }
 .page-banner h1, .page-banner p { color: var(--ink); }
+/* short banner copy shouldn't strand a single word on its own line */
+.page-banner h1 { text-wrap: balance; }
 .page-banner .lead {
   max-width: 42rem; margin: 0 auto;
   font-size: 1.2rem; font-weight: 700; line-height: 1.55;
+  text-wrap: balance;
 }
 .banner--pink { background: var(--banner-pink); }
 .banner--sky { background: var(--banner-sky); }
